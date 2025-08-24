@@ -5,7 +5,7 @@ const { Title, Paragraph, Text } = Typography
 
 const UseRefDemo: React.FC = () => {
   // 1. DOM引用
-  const inputRef = useRef<HTMLInputElement>(null)
+  const inputRef = useRef<any>(null)
   const divRef = useRef<HTMLDivElement>(null)
   
   // 2. 存储可变值
@@ -21,7 +21,7 @@ const UseRefDemo: React.FC = () => {
   })
   
   // 4. 定时器引用
-  const intervalRef = useRef<NodeJS.Timeout>()
+  const intervalRef = useRef<number>()
   const [seconds, setSeconds] = useState(0)
   const [isRunning, setIsRunning] = useState(false)
 

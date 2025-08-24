@@ -1,7 +1,6 @@
+import { Card, Col, Row, Space, Tag, Typography } from 'antd'
 import React from 'react'
-import { Card, Row, Col, Typography, Tag, Space } from 'antd'
 import { useNavigate } from 'react-router-dom'
-import { menuItems } from '../config/menu'
 
 const { Title, Paragraph } = Typography
 

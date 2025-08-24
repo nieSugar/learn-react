@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react'
+import React, { useState, useMemo } from 'react'
 import { Card, Button, Input, Space, Typography, Divider, Slider, Table } from 'antd'
 
 const { Title, Paragraph, Text } = Typography
@@ -80,7 +80,7 @@ const UseMemoDemo: React.FC = () => {
   }, [largeDataset, filterValue])
 
   // 4. 表格列定义
-  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc')
+  const [sortOrder] = useState<'ascend' | 'descend'>('descend')
   
   const tableColumns = useMemo(() => {
     console.log('重新生成表格列定义...')

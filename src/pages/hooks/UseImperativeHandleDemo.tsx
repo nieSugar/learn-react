@@ -8,7 +8,7 @@ interface ChildRef {
   getValue: () => string
 }
 
-const Child = forwardRef<ChildRef>((props, ref) => {
+const Child = forwardRef<ChildRef>((_props, ref) => {
   const inputRef = useRef<HTMLInputElement>(null)
 
   useImperativeHandle(ref, () => ({

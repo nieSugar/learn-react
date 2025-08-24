@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Card, Button, Input, Space, Typography, Divider, Switch, Badge } from 'antd'
+import { Badge, Button, Card, Divider, Input, Space, Switch, Typography } from 'antd'
+import React, { useEffect, useState } from 'react'
 
 const { Title, Paragraph, Text } = Typography
 
@@ -53,7 +53,7 @@ const UseEffectDemo: React.FC = () => {
 
   // 5. 清理函数 - 定时器
   useEffect(() => {
-    let interval: NodeJS.Timeout | null = null
+    let interval: number | null = null
     
     if (isTimerActive) {
       interval = setInterval(() => {

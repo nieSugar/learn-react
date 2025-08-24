@@ -92,7 +92,7 @@ const NestedComponent: React.FC<{ level: number }> = ({ level }) => {
 // 列表组件示例
 const ItemList: React.FC = () => {
   const baseId = useId()
-  const [items, setItems] = useState(['项目1', '项目2', '项目3'])
+  const [items] = useState(['项目1', '项目2', '项目3'])
   
   return (
     <div>
