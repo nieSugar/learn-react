@@ -41,7 +41,7 @@ const Home: React.FC = () => {
   ]
 
   const handleHookClick = (hookName: string) => {
-    navigate(`/${hookName}`)
+    navigate(`/learn-react/${hookName}`)
   }
 
   return (
