@@ -6,9 +6,9 @@ export const menuItems: MenuItem[] = [
     label: '基础 Hooks',
     path: '/basic-hooks',
     children: [
-      { key: 'useState', label: 'useState', path: '/useState' },
-      { key: 'useEffect', label: 'useEffect', path: '/useEffect' },
-      { key: 'useContext', label: 'useContext', path: '/useContext' },
+      { key: 'useState', label: 'useState', path: '/learn-react/useState' },
+      { key: 'useEffect', label: 'useEffect', path: '/learn-react/useEffect' },
+      { key: 'useContext', label: 'useContext', path: '/learn-react/useContext' },
     ]
   },
   {
@@ -16,10 +16,10 @@ export const menuItems: MenuItem[] = [
     label: '附加 Hooks',
     path: '/additional-hooks',
     children: [
-      { key: 'useReducer', label: 'useReducer', path: '/useReducer' },
-      { key: 'useCallback', label: 'useCallback', path: '/useCallback' },
-      { key: 'useMemo', label: 'useMemo', path: '/useMemo' },
-      { key: 'useRef', label: 'useRef', path: '/useRef' },
+      { key: 'useReducer', label: 'useReducer', path: '/learn-react/useReducer' },
+      { key: 'useCallback', label: 'useCallback', path: '/learn-react/useCallback' },
+      { key: 'useMemo', label: 'useMemo', path: '/learn-react/useMemo' },
+      { key: 'useRef', label: 'useRef', path: '/learn-react/useRef' },
     ]
   },
   {
@@ -27,9 +27,9 @@ export const menuItems: MenuItem[] = [
     label: '高级 Hooks',
     path: '/advanced-hooks',
     children: [
-      { key: 'useImperativeHandle', label: 'useImperativeHandle', path: '/useImperativeHandle' },
-      { key: 'useLayoutEffect', label: 'useLayoutEffect', path: '/useLayoutEffect' },
-      { key: 'useDebugValue', label: 'useDebugValue', path: '/useDebugValue' },
+      { key: 'useImperativeHandle', label: 'useImperativeHandle', path: '/learn-react/useImperativeHandle' },
+      { key: 'useLayoutEffect', label: 'useLayoutEffect', path: '/learn-react/useLayoutEffect' },
+      { key: 'useDebugValue', label: 'useDebugValue', path: '/learn-react/useDebugValue' },
     ]
   },
   {
@@ -37,11 +37,11 @@ export const menuItems: MenuItem[] = [
     label: 'React 18 新 Hooks',
     path: '/react18-hooks',
     children: [
-      { key: 'useId', label: 'useId', path: '/useId' },
-      { key: 'useTransition', label: 'useTransition', path: '/useTransition' },
-      { key: 'useDeferredValue', label: 'useDeferredValue', path: '/useDeferredValue' },
-      { key: 'useSyncExternalStore', label: 'useSyncExternalStore', path: '/useSyncExternalStore' },
-      { key: 'useInsertionEffect', label: 'useInsertionEffect', path: '/useInsertionEffect' },
+      { key: 'useId', label: 'useId', path: '/learn-react/useId' },
+      { key: 'useTransition', label: 'useTransition', path: '/learn-react/useTransition' },
+      { key: 'useDeferredValue', label: 'useDeferredValue', path: '/learn-react/useDeferredValue' },
+      { key: 'useSyncExternalStore', label: 'useSyncExternalStore', path: '/learn-react/useSyncExternalStore' },
+      { key: 'useInsertionEffect', label: 'useInsertionEffect', path: '/learn-react/useInsertionEffect' },
     ]
   },
   {
@@ -49,10 +49,10 @@ export const menuItems: MenuItem[] = [
     label: '自定义 Hooks',
     path: '/custom-hooks',
     children: [
-      { key: 'useLocalStorage', label: 'useLocalStorage', path: '/useLocalStorage' },
-      { key: 'useFetch', label: 'useFetch', path: '/useFetch' },
-      { key: 'useDebounce', label: 'useDebounce', path: '/useDebounce' },
-      { key: 'useToggle', label: 'useToggle', path: '/useToggle' },
+      { key: 'useLocalStorage', label: 'useLocalStorage', path: '/learn-react/useLocalStorage' },
+      { key: 'useFetch', label: 'useFetch', path: '/learn-react/useFetch' },
+      { key: 'useDebounce', label: 'useDebounce', path: '/learn-react/useDebounce' },
+      { key: 'useToggle', label: 'useToggle', path: '/learn-react/useToggle' },
     ]
   }
 ]

@@ -54,36 +54,36 @@ function App() {
           height: 'calc(100vh - 64px)' // 减去Header高度
         }}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/learn-react/" element={<Home />} />
             
             {/* Basic Hooks */}
-            <Route path="/useState" element={<UseStateDemo />} />
-            <Route path="/useEffect" element={<UseEffectDemo />} />
-            <Route path="/useContext" element={<UseContextDemo />} />
+            <Route path="/learn-react/useState" element={<UseStateDemo />} />
+            <Route path="/learn-react/useEffect" element={<UseEffectDemo />} />
+            <Route path="/learn-react/useContext" element={<UseContextDemo />} />
             
             {/* Additional Hooks */}
-            <Route path="/useReducer" element={<UseReducerDemo />} />
-            <Route path="/useCallback" element={<UseCallbackDemo />} />
-            <Route path="/useMemo" element={<UseMemoDemo />} />
-            <Route path="/useRef" element={<UseRefDemo />} />
+            <Route path="/learn-react/useReducer" element={<UseReducerDemo />} />
+            <Route path="/learn-react/useCallback" element={<UseCallbackDemo />} />
+            <Route path="/learn-react/useMemo" element={<UseMemoDemo />} />
+            <Route path="/learn-react/useRef" element={<UseRefDemo />} />
             
             {/* Advanced Hooks */}
-            <Route path="/useImperativeHandle" element={<UseImperativeHandleDemo />} />
-            <Route path="/useLayoutEffect" element={<UseLayoutEffectDemo />} />
-            <Route path="/useDebugValue" element={<UseDebugValueDemo />} />
+            <Route path="/learn-react/useImperativeHandle" element={<UseImperativeHandleDemo />} />
+            <Route path="/learn-react/useLayoutEffect" element={<UseLayoutEffectDemo />} />
+            <Route path="/learn-react/useDebugValue" element={<UseDebugValueDemo />} />
             
             {/* React 18 Hooks */}
-            <Route path="/useId" element={<UseIdDemo />} />
-            <Route path="/useTransition" element={<UseTransitionDemo />} />
-            <Route path="/useDeferredValue" element={<UseDeferredValueDemo />} />
-            <Route path="/useSyncExternalStore" element={<UseSyncExternalStoreDemo />} />
-            <Route path="/useInsertionEffect" element={<UseInsertionEffectDemo />} />
+            <Route path="/learn-react/useId" element={<UseIdDemo />} />
+            <Route path="/learn-react/useTransition" element={<UseTransitionDemo />} />
+            <Route path="/learn-react/useDeferredValue" element={<UseDeferredValueDemo />} />
+            <Route path="/learn-react/useSyncExternalStore" element={<UseSyncExternalStoreDemo />} />
+            <Route path="/learn-react/useInsertionEffect" element={<UseInsertionEffectDemo />} />
             
             {/* Custom Hooks */}
-            <Route path="/useLocalStorage" element={<UseLocalStorageDemo />} />
-            <Route path="/useFetch" element={<UseFetchDemo />} />
-            <Route path="/useDebounce" element={<UseDebounceDemo />} />
-            <Route path="/useToggle" element={<UseToggleDemo />} />
+            <Route path="/learn-react/useLocalStorage" element={<UseLocalStorageDemo />} />
+            <Route path="/learn-react/useFetch" element={<UseFetchDemo />} />
+            <Route path="/learn-react/useDebounce" element={<UseDebounceDemo />} />
+            <Route path="/learn-react/useToggle" element={<UseToggleDemo />} />
           </Routes>
         </Content>
       </Layout>

@@ -9,11 +9,11 @@ const Header: React.FC = () => {
   const location = useLocation()
   
   const getPageTitle = () => {
-    const path = location.pathname
+    const path = location.pathname.split('/').pop() || ''
     if (path === '/') return 'React Hooks 学习指南'
     
     // 根据路径获取页面标题
-    const hookName = path.slice(1)
+    const hookName = path;
     return hookName
   }
 
@@ -46,28 +46,38 @@ const Header: React.FC = () => {
 
   return (
     <AntHeader 
+      className="custom-header"
       style={{ 
         background: '#fff', 
-        padding: '0 24px',
         borderBottom: '1px solid #e8e8e8',
         display: 'flex',
+        paddingLeft: '24px',
         alignItems: 'center',
         justifyContent: 'space-between',
         position: 'sticky',
         top: 0,
         zIndex: 99,
-        height: '64px'
+        height: 'auto',
+        minHeight: '64px'
       }}
     >
-      <div>
-        <Title level={3} style={{ margin: 0 }}>
-          {getPageTitle()}
-        </Title>
-        <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
-          {getPageDescription()}
-        </p>
+      <div style={{
+        paddingTop: '12px',
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+      }}>
+        <div>
+          <Title level={3} style={{ margin: 0 }}>
+            {getPageTitle()}
+          </Title>
+          <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
+            {getPageDescription()}
+          </p>
+        </div>
+        <Tag color="blue">React 18+</Tag>
       </div>
-      <Tag color="blue">React 18+</Tag>
     </AntHeader>
   )
 }
